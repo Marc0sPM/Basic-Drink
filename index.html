@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BASIC DRINK · Social Gaming Bar en La Latina, Madrid</title>
+  <meta name="description" content="El primer Social Gaming Bar de Madrid. Futbolín, billar VIP, copas y la experiencia digital The Hub. Reserva online tu pack en La Latina." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23FF6B1A%22/></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        BASIC<span style="color:var(--orange)">·</span>DRINK
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#concepto">Concepto</a>
+        <a href="#espacios">Espacios</a>
+        <a href="#carta">Carta</a>
+        <a href="#thehub">The Hub</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#ubicacion">Dónde</a>
+        <a href="reservas.html" class="nav-cta">Reservar</a>
+      </div>
+      <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero-tag">⚡ Social Gaming Bar · La Latina, Madrid</span>
+      <h1>
+        Donde el<br>
+        juego activa<br>
+        <span class="accent">la fiesta.</span>
+      </h1>
+      <p>
+        No somos un bar con un futbolín al fondo. Somos un club social de estética industrial donde el juego es el motivo de la conversación, y la copa, su acompañante perfecto.
+      </p>
+      <div class="hero-actions">
+        <a href="reservas.html" class="btn btn-primary">
+          Reservar VIP Pool Room <span>→</span>
+        </a>
+        <a href="#thehub" class="btn btn-ghost">Descubre The Hub</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-value">78m²</div>
+          <div class="stat-label">Local en La Latina</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-value">3</div>
+          <div class="stat-label">Espacios diferenciados</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-value">2,80€</div>
+          <div class="stat-label">Doble de grifo</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-value">15€</div>
+          <div class="stat-label">Hora VIP Pool Room</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <div class="marquee-item">FUTBOLÍN <span>·</span></div>
+      <div class="marquee-item">BILLAR <span>·</span></div>
+      <div class="marquee-item">TARDEO <span>·</span></div>
+      <div class="marquee-item">LIGAS AMATEURS <span>·</span></div>
+      <div class="marquee-item">LA PORRA <span>·</span></div>
+      <div class="marquee-item">DEMOCRACIA MUSICAL <span>·</span></div>
+      <div class="marquee-item">FUTBOLÍN <span>·</span></div>
+      <div class="marquee-item">BILLAR <span>·</span></div>
+      <div class="marquee-item">TARDEO <span>·</span></div>
+      <div class="marquee-item">LIGAS AMATEURS <span>·</span></div>
+      <div class="marquee-item">LA PORRA <span>·</span></div>
+      <div class="marquee-item">DEMOCRACIA MUSICAL <span>·</span></div>
+    </div>
+  </div>
+
+  <!-- ===== CONCEPTO ===== -->
+  <section id="concepto">
+    <div class="container">
+      <span class="section-tag">📍 El concepto</span>
+      <h2 class="section-title">Tres espacios.<br><span class="accent">Una experiencia.</span></h2>
+      <p class="section-subtitle">
+        Cada zona tiene identidad propia, pensada para maximizar la diversión y el consumo de forma natural.
+      </p>
+
+      <div class="espacios-grid" id="espacios">
+        <div class="espacio-card">
+          <div class="espacio-icon">⚽</div>
+          <div class="espacio-name">The Arena</div>
+          <div class="espacio-meta">42 m² · Planta principal</div>
+          <p class="espacio-desc">
+            El corazón del bullicio social. Barra completa, mesas altas y futbolín de alta gama. El juego activa el consumo y se paga con Tokens.
+          </p>
+          <ul class="espacio-features">
+            <li>Aforo controlado: 20-25 personas</li>
+            <li>Máquina dispensadora de Tokens</li>
+            <li>Música a volumen ideal para hablar</li>
+          </ul>
+        </div>
+
+        <div class="espacio-card">
+          <div class="espacio-icon">🎱</div>
+          <div class="espacio-name">VIP Pool Room</div>
+          <div class="espacio-meta">18 m² · Sótano · High Ticket</div>
+          <p class="espacio-desc">
+            Sala privada con mesa de billar de 6 pies. Reserva exclusiva por horas o packs cerrados para grupos y eventos corporativos.
+          </p>
+          <ul class="espacio-features">
+            <li>Hasta 10 personas</li>
+            <li>Combos de Grupo desde 95€</li>
+            <li>Pack Partido VIP en grandes eventos</li>
+          </ul>
+        </div>
+
+        <div class="espacio-card">
+          <div class="espacio-icon">📱</div>
+          <div class="espacio-name">The Hub</div>
+          <div class="espacio-meta">Capa digital · App</div>
+          <p class="espacio-desc">
+            La plataforma que extiende la experiencia más allá del local. Reservas, ligas, votación musical y gamificación desde el móvil.
+          </p>
+          <ul class="espacio-features">
+            <li>Reservas online de Packs de Tiempo</li>
+            <li>Democracia Musical Tutelada</li>
+            <li>Ligas y "La Porra Basic Drink"</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARTA ===== -->
+  <section id="carta" style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <span class="section-tag">🍺 Carta · Smart-Low</span>
+      <h2 class="section-title">Precios pensados<br>para <span class="accent">rotar.</span></h2>
+      <p class="section-subtitle">
+        Margen alto, ticket bajo, ambiente alto. Política de precios "Smart-Low" para quedarte una ronda más.
+      </p>
+
+      <div class="carta-section">
+        <div class="carta-block">
+          <h3>🍻 Cervezas y refrescos</h3>
+          <div class="carta-item">
+            <div>
+              <div class="carta-item-name">Doble de grifo</div>
+              <div class="carta-item-desc">200 ml · cerveza tirada al momento</div>
+            </div>
+            <div class="carta-item-price">2,80 €</div>
+          </div>
+          <div class="carta-item">
+            <div>
+              <div class="carta-item-name">Tercio</div>
+              <div class="carta-item-desc">330 ml</div>
+            </div>
+            <div class="carta-item-price">3,00 €</div>
+          </div>
+          <div class="carta-item">
+            <div>
+              <div class="carta-item-name">Jarra</div>
+              <div class="carta-item-desc">500 ml · ideal para mesa</div>
+            </div>
+            <div class="carta-item-price">4,00 €</div>
+          </div>
+          <div class="carta-item">
+            <div>
+              <div class="carta-item-name">Refrescos</div>
+              <div class="carta-item-desc">Coca-Cola, Sprite, Fanta, Aquarius…</div>
+            </div>
+            <div class="carta-item-price">3,00 €</div>
+          </div>
+        </div>
+
+        <div class="carta-block">
+          <h3>🥃 Copas</h3>
+          <div class="carta-item">
+            <div>
+              <div class="carta-item-name">Copa estándar</div>
+              <div class="carta-item-desc">Marcas seleccionadas</div>
+            </div>
+            <div class="carta-item-price">7,00 €</div>
+          </div>
+          <div class="carta-item">
+            <div>
+              <div class="carta-item-name">Copa Premium</div>
+              <div class="carta-item-desc">Selección especial</div>
+            </div>
+            <div class="carta-item-price">9,50 €</div>
+          </div>
+          <div class="carta-item">
+            <div>
+              <div class="carta-item-name">Token de futbolín</div>
+              <div class="carta-item-desc">1 partida · pack de 6 por 5,00€</div>
+            </div>
+            <div class="carta-item-price">1,00 €</div>
+          </div>
+          <div class="carta-item">
+            <div>
+              <div class="carta-item-name">Snacking de cortesía</div>
+              <div class="carta-item-desc">Nachos, patatas · acompaña tu copa</div>
+            </div>
+            <div class="carta-item-price">incluido</div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 80px; font-size: clamp(28px, 4vw, 44px);">
+        Y nuestros <span class="accent">Combos.</span>
+      </h2>
+
+      <div class="precios-grid" style="margin-top: 32px;">
+        <div class="precio-card">
+          <div class="precio-name">Combo Primera Sangre</div>
+          <div class="precio-tag">Para empezar la noche</div>
+          <div class="precio-price">7<span class="unit">€</span></div>
+          <ul class="precio-includes">
+            <li>2 dobles de grifo</li>
+            <li>2 Tokens de futbolín</li>
+            <li>Snacking incluido</li>
+          </ul>
+        </div>
+
+        <div class="precio-card featured">
+          <div class="precio-name">El Cubo Gamer</div>
+          <div class="precio-tag">El más pedido</div>
+          <div class="precio-price">16<span class="unit">€</span></div>
+          <ul class="precio-includes">
+            <li>5 tercios bien fríos</li>
+            <li>Ración doble de nachos</li>
+            <li>Ideal para 3-4 personas</li>
+          </ul>
+        </div>
+
+        <div class="precio-card">
+          <div class="precio-name">Pack Sótano All-In</div>
+          <div class="precio-tag">VIP Pool Room · grupos</div>
+          <div class="precio-price">95<span class="unit">€</span></div>
+          <ul class="precio-includes">
+            <li>10 copas a elegir</li>
+            <li>Uso exclusivo de la sala</li>
+            <li>Mesa de billar incluida</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="reservas.html" class="btn btn-primary">Reservar mi mesa →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THE HUB ===== -->
+  <section id="thehub">
+    <div class="container">
+      <span class="section-tag">📱 The Hub · La capa digital</span>
+      <h2 class="section-title">El bar empieza<br>en tu <span class="accent">móvil.</span></h2>
+      <p class="section-subtitle">
+        Reservas, ligas, votación musical, "La Porra"… todo el ecosistema digital que convierte una visita en una experiencia memorable.
+      </p>
+
+      <div class="hub-grid">
+        <div class="hub-feature large">
+          <div class="hub-icon-block">📅</div>
+          <h3>Reserva tu Pack de Tiempo</h3>
+          <p>Asegura tu turno en el VIP Pool Room antes de salir de casa. Elige duración, número de personas y combo. Pago seguro y confirmación inmediata.</p>
+
+          <div class="mock-screen">
+            <div class="mock-row"><span class="label">Sala</span><span class="value">VIP Pool Room</span></div>
+            <div class="mock-row"><span class="label">Fecha</span><span class="value">Sábado 25 abril</span></div>
+            <div class="mock-row"><span class="label">Pack</span><span class="value">Pack Tardeo · 3h</span></div>
+            <div class="mock-row"><span class="label">Personas</span><span class="value">6</span></div>
+            <div class="mock-row"><span class="label">Total</span><span class="value">30,00 €</span></div>
+          </div>
+
+          <a href="reservas.html" class="btn btn-primary" style="margin-top: 24px; align-self: flex-start;">
+            Reservar ahora →
+          </a>
+        </div>
+
+        <div class="hub-feature">
+          <div class="hub-icon-block">🎵</div>
+          <h3>Democracia Musical Tutelada</h3>
+          <p>Escanea el QR de tu mesa y vota la siguiente canción dentro de la Master Playlist del local. Tú eliges el ritmo, nosotros protegemos el ambiente.</p>
+          <a href="the-hub.html#musica" class="btn btn-ghost" style="font-size: 13px; padding: 10px 18px;">Ver demo →</a>
+        </div>
+
+        <div class="hub-feature">
+          <div class="hub-icon-block">🏆</div>
+          <h3>Ligas Amateurs</h3>
+          <p>Martes de Billar, Miércoles de Futbolín. Inscripción de 15€ que se devuelve íntegramente en consumiciones. Comunidad real, no postureo.</p>
+          <a href="the-hub.html#ligas" class="btn btn-ghost" style="font-size: 13px; padding: 10px 18px;">Apuntarse →</a>
+        </div>
+
+        <div class="hub-feature">
+          <div class="hub-icon-block">🎯</div>
+          <h3>La Porra Basic Drink</h3>
+          <p>Acertar el resultado del partido te puede salir por una jarra y 6 Tokens. Solo activa durante grandes eventos como el Mundial 2026.</p>
+          <a href="the-hub.html#porra" class="btn btn-ghost" style="font-size: 13px; padding: 10px 18px;">Jugar la porra →</a>
+        </div>
+
+        <div class="hub-feature">
+          <div class="hub-icon-block">🪙</div>
+          <h3>Tokens digitales</h3>
+          <p>Compra packs de Tokens desde la app y úsalos en el futbolín sin tener que pasar por barra. Compra impulsiva, sin colas.</p>
+          <a href="the-hub.html#tokens" class="btn btn-ghost" style="font-size: 13px; padding: 10px 18px;">Ver packs →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AGENDA ===== -->
+  <section id="agenda" style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <span class="section-tag">📅 Agenda semanal</span>
+      <h2 class="section-title">Cada día tiene<br>su <span class="accent">plan.</span></h2>
+      <p class="section-subtitle">
+        Llenamos los "días valle" con dinámicas pensadas para que vuelvas entre semana.
+      </p>
+
+      <div class="agenda-grid">
+        <div class="agenda-day closed">
+          <div class="agenda-day-name">Lunes</div>
+          <div class="agenda-day-event">Cerrado</div>
+          <div class="agenda-day-time">Día de descanso</div>
+        </div>
+        <div class="agenda-day highlight">
+          <div class="agenda-day-name">Martes</div>
+          <div class="agenda-day-event">Liga de Billar</div>
+          <div class="agenda-day-time">20:00 - cierre</div>
+        </div>
+        <div class="agenda-day highlight">
+          <div class="agenda-day-name">Miércoles</div>
+          <div class="agenda-day-event">Liga de Futbolín</div>
+          <div class="agenda-day-time">20:00 - cierre</div>
+        </div>
+        <div class="agenda-day">
+          <div class="agenda-day-name">Jueves</div>
+          <div class="agenda-day-event">Tardeo Universitario</div>
+          <div class="agenda-day-time">18:00 - cierre</div>
+        </div>
+        <div class="agenda-day">
+          <div class="agenda-day-name">Viernes</div>
+          <div class="agenda-day-event">Tardeo + Noche</div>
+          <div class="agenda-day-time">18:00 - 02:30</div>
+        </div>
+        <div class="agenda-day">
+          <div class="agenda-day-name">Sábado</div>
+          <div class="agenda-day-event">Día completo</div>
+          <div class="agenda-day-time">13:00 - 02:30</div>
+        </div>
+        <div class="agenda-day">
+          <div class="agenda-day-name">Domingo</div>
+          <div class="agenda-day-event">Tardeo Familiar</div>
+          <div class="agenda-day-time">13:00 - 23:00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EQUIPO ===== -->
+  <section id="equipo">
+    <div class="container">
+      <span class="section-tag">👥 Más que socios, anfitriones</span>
+      <h2 class="section-title">El equipo<br>detrás <span class="accent">de la barra.</span></h2>
+      <p class="section-subtitle">
+        Un grupo de amigos convencidos de que Madrid necesita menos franquicias frías y más lugares con alma.
+      </p>
+
+      <div class="equipo-grid">
+        <div class="equipo-card">
+          <div class="equipo-avatar">MP</div>
+          <div class="equipo-name">Marcos Pantoja</div>
+          <div class="equipo-role">Operaciones · Finanzas</div>
+          <div class="equipo-alias">"El Jefe de Máquinas"</div>
+        </div>
+        <div class="equipo-card">
+          <div class="equipo-avatar">MP</div>
+          <div class="equipo-name">Marcos Pérez</div>
+          <div class="equipo-role">Estrategia digital</div>
+          <div class="equipo-alias">"El Conector"</div>
+        </div>
+        <div class="equipo-card">
+          <div class="equipo-avatar">SP</div>
+          <div class="equipo-name">Sergio Pérez</div>
+          <div class="equipo-role">Cliente · Eventos</div>
+          <div class="equipo-alias">"El Anfitrión"</div>
+        </div>
+        <div class="equipo-card">
+          <div class="equipo-avatar">AC</div>
+          <div class="equipo-name">Adrián Castellanos</div>
+          <div class="equipo-role">Barra · Suministros</div>
+          <div class="equipo-alias">"El Maestro de la Barra"</div>
+        </div>
+        <div class="equipo-card">
+          <div class="equipo-avatar">ML</div>
+          <div class="equipo-name">Miguel Á. López</div>
+          <div class="equipo-role">Juegos · Competición</div>
+          <div class="equipo-alias">"El Game Master"</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== UBICACIÓN ===== -->
+  <section id="ubicacion" style="background: var(--bg-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="ubicacion-grid">
+        <div class="ubicacion-info">
+          <span class="section-tag">📌 Dónde encontrarnos</span>
+          <h3>En el corazón de <span style="color: var(--orange); font-style: italic; font-weight: 400;">La Latina.</span></h3>
+          <p>
+            A pasos de la Plaza de la Cebada y la Plaza de la Paja, en plena ruta del tardeo más castizo de Madrid. Local de 78 m² con licencia en vigor y vestíbulo acústico homologado.
+          </p>
+
+          <div class="ubicacion-detalle">
+            <div class="ubicacion-row">
+              <div class="icon">📍</div>
+              <div>
+                <div class="label">Dirección</div>
+                <div class="value">Calle de la Cava Baja, La Latina, Madrid</div>
+              </div>
+            </div>
+            <div class="ubicacion-row">
+              <div class="icon">🚇</div>
+              <div>
+                <div class="label">Metro</div>
+                <div class="value">La Latina (L5) · 3 min andando</div>
+              </div>
+            </div>
+            <div class="ubicacion-row">
+              <div class="icon">🕒</div>
+              <div>
+                <div class="label">Horario</div>
+                <div class="value">Mar-Dom · cierra los lunes</div>
+              </div>
+            </div>
+            <div class="ubicacion-row">
+              <div class="icon">📞</div>
+              <div>
+                <div class="label">Reservas</div>
+                <div class="value">+34 910 000 000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <iframe
+          class="map-frame"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7150%2C40.4090%2C-3.7050%2C40.4150&layer=mapnik&marker=40.4120%2C-3.7100"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section id="cta-final">
+    <div class="container" style="text-align: center; max-width: 760px;">
+      <h2 class="section-title" style="margin-bottom: 24px;">
+        ¿Listo para <span class="accent">jugar?</span>
+      </h2>
+      <p class="section-subtitle" style="margin: 0 auto 40px;">
+        Reserva tu Pack de Tiempo en el VIP Pool Room o pásate al tardeo. La primera partida invita la casa si vienes con nuestro flyer.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a href="reservas.html" class="btn btn-primary">Reservar VIP Pool Room →</a>
+        <a href="the-hub.html" class="btn btn-ghost">Entrar a The Hub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">BASIC<span style="color:var(--orange)">·</span>DRINK</div>
+          <p class="footer-tagline">Social Gaming Bar en La Latina, Madrid. Donde el juego es la excusa y la copa el premio.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Local</h4>
+          <ul>
+            <li><a href="#concepto">El concepto</a></li>
+            <li><a href="#espacios">Espacios</a></li>
+            <li><a href="#carta">Carta</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>The Hub</h4>
+          <ul>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="the-hub.html#musica">Música</a></li>
+            <li><a href="the-hub.html#ligas">Ligas</a></li>
+            <li><a href="the-hub.html#porra">La Porra</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:hola@basicdrink.es">hola@basicdrink.es</a></li>
+            <li><a href="tel:+34910000000">+34 910 000 000</a></li>
+            <li>Cava Baja, Madrid</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Basic Drink S.L. · Todos los derechos reservados</div>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

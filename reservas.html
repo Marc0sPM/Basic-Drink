@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservar · BASIC DRINK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%23FF6B1A%22/></svg>" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        BASIC<span style="color:var(--orange)">·</span>DRINK
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#concepto">Concepto</a>
+        <a href="index.html#espacios">Espacios</a>
+        <a href="index.html#carta">Carta</a>
+        <a href="index.html#thehub">The Hub</a>
+        <a href="the-hub.html">App</a>
+        <a href="reservas.html" class="nav-cta">Reservar</a>
+      </div>
+      <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <span class="section-tag">📅 The Hub · Reservas</span>
+      <h1>Reserva tu<br><span class="accent">Pack de Tiempo.</span></h1>
+      <p>Asegura tu turno en el VIP Pool Room. Pago seguro, confirmación inmediata por email y WhatsApp.</p>
+    </div>
+  </header>
+
+  <section style="padding: 40px 0 100px;">
+    <div class="container">
+
+      <div class="form-card">
+
+        <div class="success-msg" id="successMsg">
+          <strong>¡Reserva confirmada! 🎱</strong><br>
+          Te hemos enviado los detalles a tu email y un WhatsApp con el código QR de acceso. ¡Nos vemos en La Latina!
+        </div>
+
+        <form id="reservaForm" onsubmit="handleReserva(event)">
+
+          <h2 style="font-family: var(--font-display); font-size: 24px; margin-bottom: 24px;">1. Elige tu pack</h2>
+          <div class="pack-grid">
+            <div class="pack-option" data-pack="hora" data-price="15" data-name="1 hora suelta">
+              <div class="pack-name">1 hora suelta</div>
+              <div class="pack-detail">Mesa de billar · grupo libre</div>
+              <div class="pack-price">15 €</div>
+            </div>
+            <div class="pack-option selected" data-pack="tardeo" data-price="30" data-name="Pack Tardeo">
+              <div class="pack-name">Pack Tardeo</div>
+              <div class="pack-detail">3 horas seguidas</div>
+              <div class="pack-price">30 €</div>
+            </div>
+            <div class="pack-option" data-pack="grupo" data-price="95" data-name="Pack Sótano All-In">
+              <div class="pack-name">Pack Sótano All-In</div>
+              <div class="pack-detail">3h + 10 copas incluidas</div>
+              <div class="pack-price">95 €</div>
+            </div>
+            <div class="pack-option" data-pack="evento" data-price="150" data-name="Pack Partido VIP">
+              <div class="pack-name">Pack Partido VIP</div>
+              <div class="pack-detail">Sala privada + 15 jarras</div>
+              <div class="pack-price">150 €</div>
+            </div>
+          </div>
+
+          <h2 style="font-family: var(--font-display); font-size: 24px; margin: 32px 0 24px;">2. Tus datos</h2>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nombre">Nombre y apellidos</label>
+              <input type="text" id="nombre" required placeholder="Carlos García" />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" required placeholder="600 000 000" />
+            </div>
+            <div class="form-group full">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="tu@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="fecha">Fecha</label>
+              <input type="date" id="fecha" required />
+            </div>
+            <div class="form-group">
+              <label for="hora">Hora de entrada</label>
+              <select id="hora" required>
+                <option value="">Selecciona…</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+                <option>21:00</option>
+                <option>22:00</option>
+                <option>23:00</option>
+                <option>00:00</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="personas">Nº de personas</label>
+              <select id="personas" required>
+                <option value="2">2 personas</option>
+                <option value="4">4 personas</option>
+                <option value="6" selected>6 personas</option>
+                <option value="8">8 personas</option>
+                <option value="10">10 personas (máx)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ocasion">Ocasión</label>
+              <select id="ocasion">
+                <option>Tardeo entre amigos</option>
+                <option>Cumpleaños</option>
+                <option>Despedida</option>
+                <option>Evento corporativo</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="notas">Notas para el equipo (opcional)</label>
+              <textarea id="notas" placeholder="¿Algo que debamos saber? ¿Combo extra de bebidas?"></textarea>
+            </div>
+          </div>
+
+          <h2 style="font-family: var(--font-display); font-size: 24px; margin: 32px 0 24px;">3. Resumen</h2>
+          <div class="form-summary">
+            <div class="summary-row">
+              <span>Pack seleccionado</span>
+              <strong id="sumPack">Pack Tardeo</strong>
+            </div>
+            <div class="summary-row">
+              <span>Personas</span>
+              <strong id="sumPers">6</strong>
+            </div>
+            <div class="summary-row">
+              <span>Fecha y hora</span>
+              <strong id="sumFecha">—</strong>
+            </div>
+            <hr style="border: none; border-top: 1px solid var(--border); margin: 12px 0;" />
+            <div class="summary-row">
+              <span>Total a pagar</span>
+              <span class="total" id="sumTotal">30 €</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Confirmar reserva y pagar →
+          </button>
+
+          <p style="text-align: center; color: var(--text-dim); font-size: 12px; margin-top: 16px;">
+            Pago 100 % seguro · Cancelación gratuita hasta 24h antes
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <div>© 2026 Basic Drink S.L. · Todos los derechos reservados</div>
+        <div class="social-links">
+          <a href="#">IG</a>
+          <a href="#">TT</a>
+          <a href="#">X</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Lógica de selección de packs y resumen
+    const packOptions = document.querySelectorAll('.pack-option');
+    let selectedPack = { name: 'Pack Tardeo', price: 30 };
+
+    packOptions.forEach(opt => {
+      opt.addEventListener('click', () => {
+        packOptions.forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        selectedPack = {
+          name: opt.dataset.name,
+          price: parseInt(opt.dataset.price)
+        };
+        updateSummary();
+      });
+    });
+
+    function updateSummary() {
+      document.getElementById('sumPack').textContent = selectedPack.name;
+      document.getElementById('sumPers').textContent = document.getElementById('personas').value + ' personas';
+      const fecha = document.getElementById('fecha').value;
+      const hora = document.getElementById('hora').value;
+      document.getElementById('sumFecha').textContent = fecha && hora ? `${fecha} · ${hora}` : '—';
+      document.getElementById('sumTotal').textContent = selectedPack.price + ' €';
+    }
+
+    document.getElementById('personas').addEventListener('change', updateSummary);
+    document.getElementById('fecha').addEventListener('change', updateSummary);
+    document.getElementById('hora').addEventListener('change', updateSummary);
+
+    function handleReserva(e) {
+      e.preventDefault();
+      document.getElementById('reservaForm').style.display = 'none';
+      document.getElementById('successMsg').classList.add('show');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Set min date to today
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('fecha').min = today;
+  </script>
+</body>
+</html>
